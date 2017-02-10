@@ -1,5 +1,5 @@
 # plot_IRC
-extract IRC energies from gaussien output file and plots them <br />
+Python program to extract IRC energies from gaussien output file and plots them. <br />
 
 command line should look like:
 ```
