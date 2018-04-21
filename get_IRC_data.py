@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+import _pickle as cPickle
 import matplotlib.pyplot as plt
 import cclib
 
@@ -192,6 +193,12 @@ if __name__ == "__main__":
   new_list *= 23
 
   plot_irc(new_list, mols_new)
+
+  print("\n save data")
+  with open(str(base) + "_energies.cpickle", 'wb') as f:
+    cPickle.dump(new_list, f, protocol=2)
+  with open(str(base) + "_mols.cpickle", 'wb') as f:
+    cPickle.dump(mols_new, f, protocol=2)
 
   for mol in mols_new:
     print(nAtoms)
