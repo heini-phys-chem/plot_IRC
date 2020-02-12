@@ -13,3 +13,5 @@ command line should look like:
 python3 get_IRC_data.py 'file'.log
 python plot_irc.py
 ```
+
+Also contains an extraction script for the claisen reaarangement which extracts energies and geometries of reactants, products and transition states.
